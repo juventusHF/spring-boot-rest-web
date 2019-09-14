@@ -40,7 +40,7 @@ Füge dazu im POM folgende Abhängigkeiten hinzu:
         <version>${springfox.swagger.version}</version>
     </dependency>
     
-Setze das Property `springfox.swagger.version` auf `2.7.0`.
+Setze das Property `springfox.swagger.version` auf `2.9.2`.
 
 Füge auf der Klasse `ch.juventus.example.ExampleApplication` die Annotation `@EnableSwagger2` hinzu.
 
