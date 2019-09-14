@@ -44,7 +44,7 @@ Setze das Property `springfox.swagger.version` auf `2.9.2`.
 
 Füge auf der Klasse `ch.juventus.example.ExampleApplication` die Annotation `@EnableSwagger2` hinzu.
 
-NAch einem Neustart der Applikation kannst Du Swagger UI unter folgender URL aufrufen: http://localhost:8080/swagger-ui.html.
+Nach einem Neustart der Applikation kannst Du Swagger UI unter folgender URL aufrufen: http://localhost:8080/swagger-ui.html.
 Versuche, über die Weboberfläche einige Requests an die Applikation zu senden.
 
 Die generierte API-Spezifikation lässt sich über eine weitere URL aufrufen:
@@ -84,7 +84,7 @@ In der ausgegebenen Response, überprüfe folgende Eigenschaften:
 
 Überprüfe den neu angelegten Employee, indem Du seine URL aufrufst, z.B. 
 
-    curl -v http://localhost:8080/employees/5
+    curl -v http://localhost:8080/employees/6
 
 Dabei fällt dabei auf, dass die Beziehung von Employee zu Department nicht persistiert wurde. 
 
