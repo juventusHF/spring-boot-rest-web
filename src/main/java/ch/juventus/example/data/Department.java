@@ -1,6 +1,7 @@
 package ch.juventus.example.data;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.hateoas.ResourceSupport;
 
@@ -11,6 +12,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.util.*;
 
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"}) // to resolve a lazy loading issue during JSON serialization
 public class Department extends ResourceSupport {
 
     @Id
